@@ -1,0 +1,102 @@
+/* LOG IN FORM */
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Fixed width */
+  height: 575px; /* Fixed height to prevent resizing */
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Additional styling for form elements */
+.login-form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-username {
+  padding-bottom: 15px;
+}
+
+.form-group-password {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.password-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot {
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex; /* Align buttons in a row */
+  justify-content: space-between; /* Distribute buttons evenly */
+  padding-top: 15px; /* Add space between form fields and buttons */
+}
+
+.cancelbutton {
+  background-color: #f44336; /* Red background for cancel */
+  color: white; /* White text */
+  padding: 10px; /* Padding */
+  border-radius: 4px; /* Rounded corners */
+  border: none;
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.loginbutton {
+  background-color: #4caf50; /* Green background for login */
+  color: white; /* White text */
+  padding: 10px;
+  border-radius: 4px; /* Rounded corners */
+  border: none;
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover styles */
+.cancelbutton:hover {
+  background-color: #d32f2f; /* Darker shade of red on hover */
+}
+
+.loginbutton:hover {
+  background-color: #388e3c; /* Darker shade of green on hover */
+}
+
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
