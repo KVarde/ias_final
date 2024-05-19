@@ -18,7 +18,7 @@ function SignUp() {
     }
 
   try {
-      const res = await axios.post("http://localhost:8082/signin", {
+    const res = await axios.post("http://localhost:8082/signin", {
         username: formData.username,
         password: formData.password,
         captchaValue: captchaValue,

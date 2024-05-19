@@ -11,21 +11,17 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const urlDB = 'mysql://root:expcBqjewpVeAgoiRuXKFtdPODkVpAjz@monorail.proxy.rlwy.net:10003/railway'
+// const urlDB = 'mysql://root:expcBqjewpVeAgoiRuXKFtdPODkVpAjz@monorail.proxy.rlwy.net:10003/railway'
 
 const db = mysql.createConnection({
-    host: process.env.monorail.proxy.rlwy.net,
-    user: process.env.root,
-    password: process.env.expcBqjewpVeAgoiRuXKFtdPODkVpAjz,
-    database: process.env.railway,
+    host: "localhost",
+    //default sql user
+    user: "root",
+    //default sql password
+    password: "",
+    //name of database
+    database: "pharm_login"
 });
-
-db.connect((err) => {
-    if (err) throw err;
-    console.log('Connected to DB')
-})
-
-module.exports = db;
 
 app.post('/verify', async (request, response) => {
     const { captchaValue } = request.body
