@@ -26,6 +26,8 @@
   .cards__item {
     display: flex;
     flex: 1;
+    width: 300px; /* Set fixed width */
+    height: 300px; /* Set fixed height */
     margin: 0 1rem;
     border-radius: 10px;
     margin-bottom: 24px;

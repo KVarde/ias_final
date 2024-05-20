@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css'; // Updated import path
 import HeroSectionAdmin from './HeroSectionAdmin';
 import Cards from '../Cards';
-import Footer from '../Footer';
+import FooterAdmin from './FooterAdmin';
 import Navbar from '../NavBarAdmin';
 
 
@@ -13,7 +13,7 @@ function Home() {
     <Navbar/>
       <HeroSectionAdmin />
       <Cards />
-      <Footer />
+      <FooterAdmin />
     </>
   );
 }

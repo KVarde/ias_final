@@ -16,25 +16,29 @@ function SignUp() {
       alert("Please verify the reCAPTCHA!");
       return;
     }
-
-  try {
-    const res = await axios.post("http://localhost:8082/signin", {
+  
+    try {
+      const res = await axios.post("http://localhost:8082/signin", {
         username: formData.username,
         password: formData.password,
         captchaValue: captchaValue,
       });
-      console.log(res.data);
+  
       if (res.status === 200 && res.data.message === "Login successful") {
         // Redirect to admin page after successful login
         navigate("/Admin");
-    } else {
-        // Display error message to the user
-        console.error("Invalid username or password");
+      } else if (res.status === 401) {
+        // Display error message to the user for invalid username or password
         alert("Invalid username or password");
-    }
-  } catch (err) {
+        console.error("Invalid username or password");
+      } else {
+        // Handle other error cases
+        console.error("An error occurred:", res.data.message);
+      }
+    } catch (err) {
       console.error(err);
-      // Handle error response here, e.g., display an error message
+      // Handle network or other errors here
+      alert("Invalid username or password");
     }
   };
 

@@ -10,14 +10,6 @@ function HeroSectionAdmin() {
       <h1>Welcome to St. John's PharmAssist!</h1>
       <p>We're always ready to assist!</p>
       <div className="hero-btns">
-        <Button
-          to="/aboutus"
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          ABOUT US <i className="far fa-address-card" />
-        </Button>
 
         <Button
           to="/products"
@@ -26,7 +18,7 @@ function HeroSectionAdmin() {
           buttonSize="btn--large"
           onClick={() => console.log("hey")}
         >
-          OUR PRODUCTS <i className="fas fa-capsules" />
+          ENTER DATABASE <i className="fas fa-capsules" />
         </Button>
       </div>
     </div>

@@ -65,9 +65,11 @@ const Ikaw = () => {
           </ul>
         </div>
       </div>
+      <div className="button-container">
       <Link to="/add" className="link-button">
         Add New Medicine
       </Link>
+      </div>
     </div>
     </div>
   );

@@ -1,4 +1,3 @@
-
 // Aboutus.js
 import React from "react";
 import "./Aboutus.css";
@@ -103,7 +102,7 @@ function About() {
             St. John’s PharmAssist is made by a team of 3rd year BS in Computer
             Science students for their Software Engineering subject, improved 
             for their Information Assurance and Security subject. Spearheaded
-            by their leader, <b>John Paul Amegleo</b>, he leads the team to
+            by their leader, <b>Kian Denniel Varde</b>, he leads the team to
             glory by organizing the team and each members’ ideas, formulating
             them into one. Thus, the very website was created.
           </p>
@@ -118,7 +117,7 @@ function About() {
               <h3> John Paul Amegleo </h3>
               <p>
                 {/* <br /> */}
-                Team Leader <br />
+               
                 Database Manager <br />
                 Back End Developer
               </p>
@@ -133,6 +132,8 @@ function About() {
               <h3> Kian Denniel Varde </h3>
               <p>
                 {/* <br /> */}
+                Team Leader <br />
+                Security Administrator
                 Front End Developer
                 Security Tester
               </p>
